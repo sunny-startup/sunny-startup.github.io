@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="/artiverse.png" as="image" />
-    <title>Artiverse | Waitlist</title>
-    <style>
-      body, #app {
-        width: 100dvw
-      }
-    </style>
-</head>
+  <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preload" href="/artiverse.png" as="image" />
+      <link rel="preload" href="/app.webp" as="image" />
+      <title>Artiverse | Waitlist</title>
+      <style type="text/css">
+        body, html, #app {
+          position: relative;
+          width: 100dvw;
+          height: 100dvh;
+          overflow: hidden !important;
+        }
+      </style>
+  </head>
 
-<body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-</body>
+  <body>
+      <div id="app"></div>
+      <script type="module" src="/src/main.ts"></script>
+  </body>
 
 </html>

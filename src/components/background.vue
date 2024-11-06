@@ -11,29 +11,30 @@
     const fogEffect = FOG({
       el: "#background",
       mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      highlightColor: 0xff9c00,
-      midtoneColor: 0xee00ff,
-      lowlightColor: 0x76beff,
-      baseColor: 0x5900a0,
-      blurFactor: 0.59,
-      speed: 0.70,
-      zoom: 0.20,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0xfff8f5,
+  midtoneColor: 0xf5833f,
+  lowlightColor: 0xffb073,
+  baseColor: 0xfa5993,
+  blurFactor: 0.45,
+  speed: 0.30,
+  zoom: 0.60,
       THREE,
     });
   });
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
   #background {
     position: fixed;
     top: 0px;
     width: 100dvw;
     height: 100dvh;
     padding:0px;
+    overflow: hidden;
   }
 
   #background > canvas {
