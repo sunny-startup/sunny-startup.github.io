@@ -1,9 +1,6 @@
 <template>
-  <v-app>
-    <v-main>
-      <Main />
-    </v-main>
-  </v-app>
+  <content />
+  <background />
 </template>
 
 <script setup lang="ts">
