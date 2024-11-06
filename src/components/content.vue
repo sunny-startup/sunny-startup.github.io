@@ -68,7 +68,7 @@ import { SubmitEventPromise } from 'vuetify';
     if(emailRules.value.every(rule => rule(emailRef.value) === true)) {
       loadingRef.value = true;
 
-      axios.post('http://13.212.244.220:8055/items/waitlist', { email: emailRef.value }).finally(() => {
+      axios.post('https://directus.waitlist.artiverse.online/items/waitlist', { email: emailRef.value }).finally(() => {
         setTimeout(() => {
           loadingRef.value = false;
           emailRef.value = '';
