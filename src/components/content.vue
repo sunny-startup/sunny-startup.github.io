@@ -1,6 +1,6 @@
 <template>
-  <div class="position-fixed flex lg:flex-row flex-col w-full h-full top-0 left-0 p-2 z-[200] justify-center align-center xl:space-x-[120px] lg:space-x-[16px] space-y-[16px] lg:space-y-0">
-    <div class="bg-[#ffffff40] backdrop-blur-md lg:py-[68px] lg:px-[72px] py-[32px] px-[16px] rounded-[8px] flex flex-col justify-center align-center space-y-8">
+  <div class="overflow-y-auto position-fixed flex lg:flex-row flex-col w-full h-full top-0 left-0 p-2 z-[200] lg:justify-center md:justify-start align-center xl:space-x-[120px] lg:space-x-[16px] space-y-[16px] lg:space-y-0">
+    <div class="bg-[#ffffff40] backdrop-blur-md lg:py-[68px] lg:px-[72px] py-[20px] px-[16px] rounded-[8px] flex flex-col justify-center align-center space-y-8">
       <img src="/artiverse.png" class="lg:h-[28px] h-[20px] lg:w-[221px] w-[160.14px]" />
       <img src="/app.webp" class="h-[146px] lg:h-[350px] lg:max-w-[478px] min-w-[199.39px]" />
       <p class="max-w-[548px] font-[300] text-center italic">“Our goal is to help Philippines be the number one creative economy in ASEAN by 2030” - Creators</p>
@@ -8,9 +8,9 @@
     <div class="xl:p-[96px] p-8 bg-white rounded-[8px] drop-shadow-xl lg:space-y-[32px] space-y-[16px]">
       <template v-if="!successRef">
         <div class="max-w-[508px] flex flex-col justify-center align-center lg:space-y-[28px] space-y-[16px]">
-          <div class="text-xl flex flex-row">
+          <div class="text-xl">
             <span>Join the </span>
-            <p class="p-0 m-0 bg-gradient-to-r from-orange-500 to-indigo-500 bg-clip-text text-transparent ml-1">Creative Revolution!</p>
+            <span class="p-0 m-0 bg-gradient-to-r from-orange-500 to-indigo-500 bg-clip-text text-transparent ml-1">Creative Revolution!</span>
           </div>
           <p class="text-center lg:text-md text-sm">
             Artiverse is almost here! Get on the waitlist and be one of the first to experience a world made by artists, for artists.
