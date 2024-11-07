@@ -10,7 +10,7 @@
         <div class="max-w-[508px] flex flex-col justify-center align-center lg:space-y-[28px] space-y-[16px]">
           <div class="text-xl">
             <span>Join the </span>
-            <span class="p-0 m-0 bg-gradient-to-r from-orange-500 to-indigo-500 bg-clip-text text-transparent ml-1">Creative Revolution!</span>
+            <span class="p-0 m-0 bg-gradient-to-r from-orange-600 via-pink-600 to-purple-600 bg-clip-text text-transparent ml-1">Creative Revolution!</span>
           </div>
           <p class="text-center lg:text-md text-sm">
             Artiverse is almost here! Get on the waitlist and be one of the first to experience a world made by artists, for artists.
@@ -34,7 +34,7 @@
             <span>Welcome to the Artiverse Waitlist!</span>
           </div>
           <p class="text-center lg:text-md text-sm">
-            Thank you for joining us! We’re so excited to have you be part of Artiverse — <b class="bg-gradient-to-r from-orange-500 to-indigo-500 bg-clip-text text-transparent">the first platform made just for Filipino artists</b> like you! 🎨
+            Thank you for joining us! We’re so excited to have you be part of Artiverse — <b class="bg-gradient-to-r from-orange-600 via-pink-600 to-purple-600 bg-clip-text text-transparent">the first platform made just for Filipino artists</b> like you! 🎨
           </p>
           <p class="text-center lg:text-md text-sm">
             We’re excited to have you with us—spread the word and invite your friends!

@@ -15,13 +15,9 @@
   gyroControls: false,
   minHeight: 200.00,
   minWidth: 200.00,
-  highlightColor: 0xffeea5,
-  midtoneColor: 0xe5aefc,
-  lowlightColor: 0xffc1dd,
-  baseColor: 0xfff6e4,
-  blurFactor: 0.45,
-  speed: 0.30,
-  zoom: 0.60,
+  highlightColor: 0xffc29e,
+  midtoneColor: 0xe2b4ff,
+  lowlightColor: 0xd9c3ff,
       THREE,
     });
   });
