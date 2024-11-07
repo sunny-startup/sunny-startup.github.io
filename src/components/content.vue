@@ -22,8 +22,8 @@
         </v-form>
         <p class="max-w-[508px] text-center lg:text-md text-sm">By signing up, you’ll also get listed on the DTI’s official artist registry and enjoy artist benefits.</p>
         <div class="lg:text-md text-sm flex flex-row justify-center">
-          <span>Follow us on</span> 
-          <a href="https://facebook.com" target="_blank" class="mx-1 text-[#7A29B7]">Facebook</a> 
+          <span>Follow us on</span>
+          <a href="https://www.facebook.com/profile.php?id=61565206343705" target="_blank" class="mx-1 text-[#7A29B7]">Facebook</a>
           <span class="hidden xl:block">to stay updated on our launch!</span>
         </div>
       </template>
@@ -40,10 +40,10 @@
             We’re excited to have you with us—spread the word and invite your friends!
           </p>
           <p class="text-center lg:text-md text-sm">
-            You can follow us on Facebook for the latest news and sneak peeks! 
+            You can follow us on Facebook for the latest news and sneak peeks!
           </p>
         </div>
-        <v-btn variant="flat" type="submit" color="black" append-icon="mdi-facebook" class="min-h-[52px] w-full" href="https://facebook.com" target="_blank">Visit our Facebook page</v-btn>
+        <v-btn variant="flat" type="submit" color="black" append-icon="mdi-facebook" class="min-h-[52px] w-full" href="https://www.facebook.com/profile.php?id=61565206343705" target="_blank">Visit our Facebook page</v-btn>
       </template>
     </div>
   </div>
