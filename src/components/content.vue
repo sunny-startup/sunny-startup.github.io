@@ -3,7 +3,7 @@
     <div class="bg-[#ffffff80] backdrop-blur-md lg:py-[68px] lg:px-[72px] py-[20px] px-[16px] rounded-[8px] flex flex-col justify-center align-center space-y-8">
       <img src="/artiverse.png" class="lg:h-[28px] h-[20px] lg:w-[221px] w-[160.14px]" />
       <img src="/app.webp" class="h-[146px] lg:h-[350px] lg:max-w-[478px] min-w-[199.39px]" />
-      <p class="max-w-[548px] font-[300] text-center italic">“Our goal is to help Philippines be the number one creative economy in ASEAN by 2030” - Creators</p>
+      <p class="max-w-[548px] font-[300] text-center text-black italic">“Our goal is to help Philippines be the number one creative economy in ASEAN by 2030” - Creators</p>
     </div>
     <div class="xl:p-[96px] p-8 bg-white rounded-[8px] drop-shadow-xl lg:space-y-[32px] space-y-[16px]">
       <template v-if="!successRef">
