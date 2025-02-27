@@ -50,31 +50,34 @@
 </template>
 
 <script setup lang="ts">
-  import axios from 'axios';
 import { ref } from 'vue';
 import { SubmitEventPromise } from 'vuetify';
+import { db } from '@/lib/firebase';
+import { doc, serverTimestamp, setDoc } from 'firebase/firestore';
 
-  const loadingRef = ref(false);
-  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  const emailRef = ref('');
-  const emailRules = ref([
-    (value: string) => !!value || 'Email is required',
-    (value: string) => !!emailRegex.test(value) || 'Please enter a valid email address',
-  ]);
 
-  const successRef = ref(false);
+const loadingRef = ref(false);
+const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const emailRef = ref('');
+const emailRules = ref([
+  (value: string) => !!value || 'Email is required',
+  (value: string) => !!emailRegex.test(value) || 'Please enter a valid email address',
+]);
 
-  const submit: (((e: SubmitEventPromise) => any) & ((e: SubmitEventPromise) => any)) = (event) => {
-    if(emailRules.value.every(rule => rule(emailRef.value) === true)) {
-      loadingRef.value = true;
+const successRef = ref(false);
 
-      axios.post('https://directus.waitlist.artiverse.online/items/waitlist', { email: emailRef.value }).finally(() => {
-        setTimeout(() => {
-          loadingRef.value = false;
-          emailRef.value = '';
-          successRef.value = true;
-        }, 1000);
-      });
-    }
+const submit: (((e: SubmitEventPromise) => any) & ((e: SubmitEventPromise) => any)) = (event) => {
+  if(emailRules.value.every(rule => rule(emailRef.value) === true)) {
+    loadingRef.value = true;
+    const waitingListDocument = doc(db, "waiting-list", emailRef.value)
+    setDoc(waitingListDocument, { email: emailRef.value, when: serverTimestamp() }).finally(() => {
+      setTimeout(() => {
+        loadingRef.value = false;
+        emailRef.value = '';
+        successRef.value = true;
+      }, 1000);
+    });
+    
   }
+}
 </script>
