@@ -23,7 +23,7 @@
         <p class="max-w-[508px] text-center lg:text-md text-sm">By signing up, you’ll also get listed on the DTI’s official artist registry and enjoy artist benefits.</p>
         <div class="lg:text-md text-sm flex flex-row justify-center">
           <span>Follow us on</span>
-          <a href="https://www.facebook.com/profile.php?id=61565206343705" target="_blank" class="mx-1 text-[#7A29B7]">Facebook</a>
+          <a href="https://www.facebook.com/OfficialArtiverse" target="_blank" class="mx-1 text-[#7A29B7]">Facebook</a>
           <span class="hidden xl:block">to stay updated on our launch!</span>
         </div>
       </template>
